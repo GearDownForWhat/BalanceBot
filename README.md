@@ -1,12 +1,23 @@
 # BalanceBot
 The Stupid fast Servo powered balance bot
 
-This runs on a Teensy 3.6 with an MPU6050 as the IMU and Odrive 3.6 with custom firmware to increase the serial to 921600 baud
+## Hardware
+ - Teensy 3.6
+ - MPU6050
+ - Odrive 3.6
+ - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
+ - 2X Encoders https://odriverobotics.com/shop/cui-amt-102
+
+## Connections
+ - Coming Soon!
+
+
+## Software
 
 I dont expect anyone to use this code line for line, but if you do:
 
-You will need to modify the PID1 Library, I made a change to the library
-1. that can be used to clear or reduce the integral band's windup. i need to upload my files for that
+You will need to replace your PID Library with mine 
+1. i made a change that can be used to clear or reduce the integral band's windup. This is used in the "outer loop"
 
 
 2. In order to have the appropate serial speed to tighten your control loop, You will need to install the approprate things to build and load custom firmware on the Odrive, so that you are able to increase the baud rate. Follow Oscars instructions on how to do that found here:
