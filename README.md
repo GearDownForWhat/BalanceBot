@@ -2,14 +2,20 @@
 The Stupid fast Servo powered balance bot
 
 ## Hardware
- - Teensy 3.6
- - MPU6050
- - Odrive 3.6
+ - Teensy 3.6 https://amzn.to/2Q0A1rL
+ - MPU-6050 (you need GY-521 with the internal low dropout regulator) https://amzn.to/2JEKfgB
+ - Odrive 3.6 24V
  - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
  - 2X Encoders https://odriverobotics.com/shop/cui-amt-102
-
+ - 2 or 4 2200 3S mAh Lipo batteries https://amzn.to/2LxU3vc
+ - Deans Connectors https://amzn.to/2YnCuje
+ - R/C Transmitter and Reciever 
+ - Assorted Resistors https://amzn.to/2Vhlzgb
 ## Connections
- - Coming Soon!
+  - We will be using resistors in several places to protect the serial bus on the Odrive, and we will be creating a voltage divider to drop the voltage of the R/C Reciever to 3.3V
+
+
+
 
 
 ## Software
@@ -37,3 +43,8 @@ Then build and load the firmware.
   mpu.setXAccelOffset(1012); 
   mpu.setYAccelOffset(2020);
   mpu.setZAccelOffset(686);
+
+
+
+## Amazon Be Happy
+We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.
