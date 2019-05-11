@@ -16,8 +16,8 @@ The Stupid fast Servo powered balance bot
 
 I dont expect anyone to use this code line for line, but if you do:
 
-You will need to replace your PID Library with mine 
-1. i made a change that can be used to clear or reduce the integral band's windup. This is used in the "outer loop"
+1. You will need to replace your PID Library with mine 
+ - I made a change that can be used to clear or reduce the integral band's windup. This is used in the "outer loop"
 
 
 2. In order to have the appropate serial speed to tighten your control loop, You will need to install the approprate things to build and load custom firmware on the Odrive, so that you are able to increase the baud rate. Follow Oscars instructions on how to do that found here:
