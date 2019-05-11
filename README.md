@@ -22,13 +22,7 @@ I dont expect anyone to use this code line for line, but if you do:
 
 
 3. In order to have the appropate serial speed to tighten your control loop, You will need to install the approprate things to build and load custom firmware on the Odrive, so that you are able to increase the baud rate. Follow Oscars instructions on how to do that found here:
-https://docs.odriverobotics.com/developer-guide
-
-
-Then find this file and open it in text editor:
-
-Firmware/Board/v3/Src/usart.c
-and change this line:
+https://docs.odriverobotics.com/developer-guide Then find this file and open it in text editor: Firmware/Board/v3/Src/usart.c and change this line:
 huart4.Init.BaudRate = 115200;
 To this:
 huart4.Init.BaudRate = 921600;
