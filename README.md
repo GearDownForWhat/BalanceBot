@@ -14,6 +14,7 @@ The Stupid fast Servo powered balance bot
 ## Connections
  - The wiring for this project is very specific, and there is a lot of it. I would highly suggest you send me an email and i can send you a prototype board that i've been working on to make this project easier.
 ![IMG_0507](https://user-images.githubusercontent.com/30188415/58343439-97a50500-7e18-11e9-856d-3b5b5a7112f0.JPG)
+![GDFW_IMU](https://user-images.githubusercontent.com/30188415/58344389-24e95900-7e1b-11e9-8229-88899045c838.png)
 
 
 
