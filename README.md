@@ -12,9 +12,8 @@ The Stupid fast Servo powered balance bot
  - R/C Transmitter and Reciever 
  - Assorted Resistors https://amzn.to/2Vhlzgb
 ## Connections
-  - We will be using resistors in several places to protect the serial bus on the Odrive, and we will be creating a voltage divider to drop the voltage of the R/C Reciever to 3.3V
-
-
+ - The wiring for this project is very specific, and there is a lot of it. I would highly suggest you send me an email and i can send you a prototype board that i've been working on to make this project easier.
+![IMG_0507](https://user-images.githubusercontent.com/30188415/58343439-97a50500-7e18-11e9-856d-3b5b5a7112f0.JPG)
 
 
 
