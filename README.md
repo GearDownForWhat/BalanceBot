@@ -1,68 +1,48 @@
 # BalanceBot
-The Stupid fast Servo powered balance bot
 
-## Hardware
- - Teensy 4.1 https://amzn.to/48WA4g9
- - Rbalance 3v3 (designed by me) allows you to plug in all the things that you need to interface for a project like this including:
-   - Teensy 4.1
-   - 4 LED's
-   - onboard MPU6050 in the correct orentation (address 0X69)
-   - 3 Potentiometer inputs for P,I,D Setting
-   - 4 dip switches for rapid configuration
-   - Output of all extra IO
-   - 2.2K resistance protected serial 3 port (reduces the risk of blowing up Odrive if open ground)
-   -  up to 12V Voltage divider analog input (for first battery in series)
-   -  up to 24V Voltage divider analog input that also feeds the 5V Voltage regulator
-   - 2 R/C Servo outputs
-   - 6 Channel voltage divided R/C reciever inputs (RC reciever plugs directly into the board)
-   - Link to purchase Rbalance 3v3 coming soon!
-  ![alt text](IMG_2786.jpg)
- - Odrive 3.6 24V
- - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
- - 2X Encoders and cables https://odriverobotics.com/shop/cui-amt-102
- - 2 2200 3S mAh Lipo batteries https://amzn.to/499Znei
- - Deans Connectors https://amzn.to/2YnCuje
- - R/C Transmitter and Reciever https://amzn.to/42nNXkN use one with channels 5 and 6 as potentiometers, and make sure the reciever doesnt stick out when plugged into Rbalance 3v3 https://amzn.to/42nNXkN
- - Wheels https://amzn.to/3uswwTA
- - 3D Printed Parts from Fusion 360 design
+Experience unparalleled speed with our servo-powered balance bot, engineered for performance and precision.
+
+## Hardware Components
+
+- **Teensy 4.1:** The brain of the bot. Available [here](https://amzn.to/48WA4g9).
+- **Rbalance 3v3 Board:** My custom design that seamlessly integrates essential components for balance bot projects, including:
+  - Direct support for Teensy 4.1.
+  - 4 LED indicators.
+  - An onboard MPU6050 accelerometer/gyro with optimal orientation (I2C address 0X69).
+  - Three potentiometers for fine-tuning PID settings.
+  - Four DIP switches for quick configuration changes.
+  - Comprehensive IO output options.
+  - A 2.2K-ohm resistor-protected serial 3 port to safeguard against potential Odrive and Teensy damage.
+  - Voltage divider analog inputs for monitoring battery levels (up to 12V and 24V).
+  - Two outputs for R/C servos.
+  - Six-channel input for voltage-divided R/C receiver signals (allowing direct receiver connection).
+  - Purchase link for Rbalance 3v3 will be provided soon.
+- **Odrive 3.6 24V:** For precise motor control.
+- **Motors:** 2x 5065 Dual shaft Brushless Outrunners. Available [here](https://odriverobotics.com/shop/odrive-custom-motor-d5065).
+- **Encoders:** 2x with cables for accurate position feedback. Available [here](https://odriverobotics.com/shop/cui-amt-102).
+- **Batteries:** 2x 2200mAh 3S LiPo for reliable power. Available [here](https://amzn.to/499Znei).
+- **Connectors:** Deans Connectors for secure electrical connections. Available [here](https://amzn.to/2YnCuje).
+- **R/C System:** Transmitter and Receiver with channels 5 and 6 as potentiometers (also can be used for tuning PID). Available [here](https://amzn.to/42nNXkN).
+- **Wheels:** Durable and smooth-running. Available [here](https://amzn.to/3uswwTA).
+- **3D Printed Parts:** Custom-designed components from Fusion 360.
+
+![BalanceBot Image](IMG_2786.jpg)
+
 ## Connections
- - The wiring for this project is very specific, and there is a lot of it. I would highly suggest you send me an email and i can send you a prototype board that i've been working on to make this project easier.
 
-   
+The wiring for this project is intricate, involving numerous specific connections. For ease of assembly, I recommend contacting me to obtain a prototype board that simplifies this process.
 
+## Software Guidelines
 
+While the provided code is not meant for direct replication in every project, here are key adjustments and installations necessary for optimal performance:
 
-## Software
+1. **PID Library Modification:** Replace your existing PID library with mine to leverage enhancements for managing integral windup in the control loop.
+2. **MPU6050 Library:** Install the necessary library to utilize DMP mode, available [here](https://github.com/jrowberg/i2cdevlib).
+3. **Odrive Firmware Customization:** To achieve the desired serial speed and tighten the control loop, follow the instructions [here](https://docs.odriverobotics.com/developer-guide) to build and load custom firmware, adjusting the baud rate as specified.
+4. **DMP Calibration:** Use the provided example code for calibrating the MPU6050, substituting the calibration values with those specific to your setup.
+5. **Firmware Compatibility:** The code is tailored for an Odrive 3.6 with firmware from late 2019, without plans for updates to accommodate newer firmware versions due to potential compatibility issues.
 
-I dont expect anyone to use this code line for line, but if you do:
-
-1. You will need to replace your PID Library with mine, I made a change that can be used to clear or reduce the integral band's windup. This is used in the "outer loop"
-
-2. You need to Install this library for the MPU6050 to use DMP Mode: https://github.com/jrowberg/i2cdevlib
-
-
-3. In order to have the appropate serial speed to tighten your control loop, You will need to install the approprate things to build and load custom firmware on the Odrive, so that you are able to increase the baud rate. Follow Oscars instructions on how to do that found here:
-https://docs.odriverobotics.com/developer-guide Then find this file and open it in text editor: Firmware/Board/v3/Src/usart.c and change this line:
-huart4.Init.BaudRate = 115200;
-To this:
-huart4.Init.BaudRate = 921600;
-Then build and load the firmware. 
-
-
-4. You need to use DMP calibration example code included with the MPU6050 Library, use the address 0X69 and instructions and swap my calibration values with yours
-  I.E.
-  mpu.setXGyroOffset(102);
-  mpu.setYGyroOffset(20);
-  mpu.setZGyroOffset(-74);
-  mpu.setXAccelOffset(1012); 
-  mpu.setYAccelOffset(2020);
-  mpu.setZAccelOffset(686);
-
-5. All of this code is talking to my 5 year old Odrive 3.6 of which i REFUSE to update because SCARY!. this Odrive has taken a beating, ane due to my lazyness this code will probaably not talk to an Odrive with new firmware. I believe oscar has changed the communicaiton style with the never firmware also, so if you want this to work without any issues maybe look for an old version of Odrive firmware from late 2019??  So sorry for this.
-  
-7. If you do not know how to tune PID OR If you intend to help write software and features for this project, you will really need to have your balance bot configured EXACTLY the same as mine.
-
-
+For those looking to contribute to the software or replicate the setup accurately, ensuring hardware configuration matches mine is crucial for success.
 
 
 ## Amazon Be Happy
