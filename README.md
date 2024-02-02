@@ -6,8 +6,8 @@ The Stupid fast Servo powered balance bot
  - Rbalance 3v3 (designed by me) Link to come soon!
  - Odrive 3.6 24V
  - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
- - 2X Encoders https://odriverobotics.com/shop/cui-amt-102
- - 2 or 4 2200 3S mAh Lipo batteries https://amzn.to/499Znei
+ - 2X Encoders and cables https://odriverobotics.com/shop/cui-amt-102
+ - 2 2200 3S mAh Lipo batteries https://amzn.to/499Znei
  - Deans Connectors https://amzn.to/2YnCuje
  - R/C Transmitter and Reciever https://amzn.to/42nNXkN use one with channels 5 and 6 as potentiometers, and make sure the reciever doesnt stick out when plugged into Rbalance 3v3 https://amzn.to/42nNXkN
  - Wheels https://amzn.to/3uswwTA
