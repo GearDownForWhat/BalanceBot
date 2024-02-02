@@ -58,7 +58,9 @@ Then build and load the firmware.
   mpu.setYAccelOffset(2020);
   mpu.setZAccelOffset(686);
 
-5. All of this code is talking to my 5 year old Odrive 3.6 of which i REFUSE to update because SCARY!. this Odrive has taken a beating, ane due to my lazyness this code will probaably not talk to an Odrive with new firmware. I believe oscar has changed the communicaiton style with the never firmware also, so if you want this to work without any issues maybe look for an old version of Odrive firmware from late 2019??  So sorry for this. 
+5. All of this code is talking to my 5 year old Odrive 3.6 of which i REFUSE to update because SCARY!. this Odrive has taken a beating, ane due to my lazyness this code will probaably not talk to an Odrive with new firmware. I believe oscar has changed the communicaiton style with the never firmware also, so if you want this to work without any issues maybe look for an old version of Odrive firmware from late 2019??  So sorry for this.
+  
+7. If you do not know how to tune PID OR If you intend to help write software and features for this project, you will really need to have your balance bot configured EXACTLY the same as mine.
 
 
 
