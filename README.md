@@ -29,9 +29,18 @@ Experience unparalleled speed with our servo-powered balance bot, engineered for
 ## Rbalance 3v3
 ![BalanceBot Image](IMG_2786.jpg)
 
-## Connections
+## Wiring and Connections
 
-The wiring for this project is intricate, involving numerous specific connections. For ease of assembly, I recommend contacting me to obtain a prototype board that simplifies this process.
+Wiring your BalanceBot correctly is crucial. To streamline this process, we're excited to introduce the RBalance 3v3 board, avaliable soon from my Etsy store. This board is designed to minimize the complexity of connections, ensuring a smooth and efficient setup.
+
+With the RBalance 3v3, you'll need to make only a few critical connections:
+- Connect the ground from the Odrive to both the Teensy and the 24V batteries. This ensures a common ground for all components.
+- Link the batteries to the Odrive as well as to the voltage sense pins on the RBalance 3v3 board. This allows for accurate power monitoring, and powers the voltage regulator for the Rbalance 3v3.
+- Do NOT Power the 5V bus on the RBalance 3v3 with the Odrive. 
+- Finally, connect the motors and encoders to the Odrive.
+
+Choosing the RBalance 3v3 eliminates the need for intricate wiring for the MPU6050 and other components, offering a cleaner, more reliable connection that significantly enhances the bot's performance. Without the RBalance 3v3, you would need to undertake the complex task of wiring the MPU6050 directly, which can lead to signal interference from the drive and compromise the MPU6050's functionality. While assembling the bot without the RBalance 3v3 is possible, the RBalance 3v3 board is designed to make the process much more straightforward.
+
 
 ## Software Guidelines
 
@@ -41,7 +50,7 @@ While the provided code is not meant for direct replication in every project, he
 2. **MPU6050 Library:** Install the necessary library to utilize DMP mode, available [here](https://github.com/jrowberg/i2cdevlib).
 3. **Odrive Firmware Customization:** To achieve the desired serial speed and tighten the control loop, follow the instructions [here](https://docs.odriverobotics.com/developer-guide) to build and load custom firmware, adjusting the baud rate as specified.
 4. **DMP Calibration:** Use the provided example code for calibrating the MPU6050, substituting the calibration values with those specific to your setup.
-5. **Firmware Compatibility:** The code is tailored for an Odrive 3.6 with firmware from late 2019, without plans for updates to accommodate newer firmware versions due to potential compatibility issues.
+5. **Firmware Compatibility:** The code is tailored for an Odrive 3.6 with firmware from late 2019, without plans for updates to accommodate newer firmware versions due to potential lazyness issues.
 
 For those looking to contribute to the software or replicate the setup accurately, ensuring hardware configuration matches mine is crucial for success.
 
