@@ -4,6 +4,7 @@ The Stupid fast Servo powered balance bot
 ## Hardware
  - Teensy 4.1 https://amzn.to/48WA4g9
  - Rbalance 3v3 (designed by me) Link to come soon!
+ - ![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true](https://github.com/GearDownForWhat/BalanceBot/blob/master/IMG_2786.jpg))
  - Odrive 3.6 24V
  - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
  - 2X Encoders and cables https://odriverobotics.com/shop/cui-amt-102
@@ -15,6 +16,7 @@ The Stupid fast Servo powered balance bot
 ## Connections
  - The wiring for this project is very specific, and there is a lot of it. I would highly suggest you send me an email and i can send you a prototype board that i've been working on to make this project easier.
 
+   
 
 
 
