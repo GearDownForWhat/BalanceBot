@@ -2,19 +2,19 @@
 The Stupid fast Servo powered balance bot
 
 ## Hardware
- - Teensy 3.6 https://amzn.to/2Q0A1rL
- - MPU-6050 (you need GY-521 with the internal low dropout regulator) https://amzn.to/2JEKfgB
+ - Teensy 4.1 https://amzn.to/48WA4g9
+ - Rbalance 3v3 (designed by me) Link to come soon!
  - Odrive 3.6 24V
  - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
  - 2X Encoders https://odriverobotics.com/shop/cui-amt-102
- - 2 or 4 2200 3S mAh Lipo batteries https://amzn.to/2LxU3vc
+ - 2 or 4 2200 3S mAh Lipo batteries https://amzn.to/499Znei
  - Deans Connectors https://amzn.to/2YnCuje
- - R/C Transmitter and Reciever 
- - Assorted Resistors https://amzn.to/2Vhlzgb
+ - R/C Transmitter and Reciever https://amzn.to/42nNXkN use one with channels 5 and 6 as potentiometers, and make sure the reciever doesnt stick out when plugged into Rbalance 3v3 https://amzn.to/42nNXkN
+ - Wheels https://amzn.to/3uswwTA
+ - 3D Printed Parts from Fusion 360 design
 ## Connections
  - The wiring for this project is very specific, and there is a lot of it. I would highly suggest you send me an email and i can send you a prototype board that i've been working on to make this project easier.
-![IMG_0507](https://user-images.githubusercontent.com/30188415/58343439-97a50500-7e18-11e9-856d-3b5b5a7112f0.JPG)
-![GDFW_IMU](https://user-images.githubusercontent.com/30188415/58344389-24e95900-7e1b-11e9-8229-88899045c838.png)
+
 
 
 
@@ -35,7 +35,7 @@ huart4.Init.BaudRate = 921600;
 Then build and load the firmware. 
 
 
-4. You need to use DMP calibration example code and instructions and swap my calibration values with yours
+4. You need to use DMP calibration example code included with the MPU6050 Library, use the address 0X69 and instructions and swap my calibration values with yours
   I.E.
   mpu.setXGyroOffset(102);
   mpu.setYGyroOffset(20);
@@ -43,6 +43,9 @@ Then build and load the firmware.
   mpu.setXAccelOffset(1012); 
   mpu.setYAccelOffset(2020);
   mpu.setZAccelOffset(686);
+
+5.I forgot what i was supposed to type gere
+
 
 
 
