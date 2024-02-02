@@ -1,5 +1,10 @@
 # BalanceBot
 
+As seen in my video : https://www.youtube.com/watch?v=k_vYA-xRXyo
+
+
+![BalanceBot Image](IMG_2787.jpg)
+
 Experience unparalleled speed with our servo-powered balance bot, engineered for performance and precision.
 
 ## Hardware Components
