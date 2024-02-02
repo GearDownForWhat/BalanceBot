@@ -3,9 +3,20 @@ The Stupid fast Servo powered balance bot
 
 ## Hardware
  - Teensy 4.1 https://amzn.to/48WA4g9
- - Rbalance 3v3 (designed by me) Link to come soon!
- - IMG_2786.jpg
- ![alt text](IMG_2786.jpg)
+ - Rbalance 3v3 (designed by me) allows you to plug in all the things that you need to interface for a project like this including:
+   - Teensy 4.1
+   - 4 LED's
+   - onboard MPU6050 in the correct orentation (address 0X69)
+   - 3 Potentiometer inputs for P,I,D Setting
+   - 4 dip switches for rapid configuration
+   - Output of all extra IO
+   - 2.2K resistance protected serial 3 port (reduces the risk of blowing up Odrive if open ground)
+   -  up to 12V Voltage divider analog input (for first battery in series)
+   -  up to 24V Voltage divider analog input that also feeds the 5V Voltage regulator
+   - 2 R/C Servo outputs
+   - 6 Channel voltage divided R/C reciever inputs (RC reciever plugs directly into the board)
+   - Link to purchase Rbalance 3v3 coming soon!
+  ![alt text](IMG_2786.jpg)
  - Odrive 3.6 24V
  - 2x 5065 Dual shaft Brushless Outrunner https://odriverobotics.com/shop/odrive-custom-motor-d5065
  - 2X Encoders and cables https://odriverobotics.com/shop/cui-amt-102
