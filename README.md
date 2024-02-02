@@ -26,6 +26,7 @@ Experience unparalleled speed with our servo-powered balance bot, engineered for
 - **Wheels:** Durable and smooth-running. Available [here](https://amzn.to/3uswwTA).
 - **3D Printed Parts:** Custom-designed components from Fusion 360.
 
+## Rbalance 3v3
 ![BalanceBot Image](IMG_2786.jpg)
 
 ## Connections
