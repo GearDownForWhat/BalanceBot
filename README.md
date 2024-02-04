@@ -21,7 +21,7 @@ Experience unparalleled speed with our servo-powered balance bot, engineered for
   - Voltage divider analog inputs for monitoring battery levels (up to 12V and 24V).
   - Two outputs for R/C servos.
   - Six-channel input for voltage-divided R/C receiver signals (allowing direct receiver connection).
-  - Purchase link for Rbalance 3v3 will be provided soon.
+  - Purchase [Here](https://www.etsy.com/listing/1670581733/rbalance-3v3)
 - **Odrive 3.6 24V:** For precise motor control.
 - **Motors:** 2x 5065 Dual shaft Brushless Outrunners. Available [here](https://odriverobotics.com/shop/odrive-custom-motor-d5065).
 - **Encoders:** 2x with cables for accurate position feedback. Available [here](https://odriverobotics.com/shop/cui-amt-102).
