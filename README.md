@@ -14,14 +14,13 @@ Experience unparalleled speed with our servo-powered balance bot, engineered for
   - Direct support for Teensy 4.1.
   - 4 LED indicators.
   - An onboard MPU6050 accelerometer/gyro with optimal orientation (I2C address 0X69).
-  - Three potentiometers for fine-tuning PID settings.
+  - Three potentiometers positions
   - Four DIP switches for quick configuration changes.
-  - Comprehensive IO output options.
   - A 2.2K-ohm resistor-protected serial 3 port to safeguard against potential Odrive and Teensy damage.
   - Voltage divider analog inputs for monitoring battery levels (up to 12V and 24V).
   - Two outputs for R/C servos.
   - Six-channel input for voltage-divided R/C receiver signals (allowing direct receiver connection).
-  - Purchase [Here](https://www.etsy.com/listing/1670581733/rbalance-3v3)
+  - Shoot Me an email at ASKGDFW@gmail.com if you'd like to purchase the Rbalance3v3. Cost is $75.
 - **Odrive 3.6 24V:** For precise motor control.
 - **Motors:** 2x 5065 Dual shaft Brushless Outrunners. Available [here](https://odriverobotics.com/shop/odrive-custom-motor-d5065).
 - **Encoders:** 2x with cables for accurate position feedback. Available [here](https://odriverobotics.com/shop/cui-amt-102).
