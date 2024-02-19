@@ -52,11 +52,10 @@ While the provided code is not meant for direct replication in every project, he
 
 1. **PID Library Modification:** Replace your existing PID library with mine to leverage enhancements for managing integral windup in the control loop.
 2. **MPU6050 Library:** Install the necessary library to utilize DMP mode, available [here](https://github.com/jrowberg/i2cdevlib).
-3. **Odrive Firmware Customization:** To achieve the desired serial speed and tighten the control loop, follow the instructions [here](https://docs.odriverobotics.com/developer-guide) to build and load custom firmware, adjusting the baud rate as specified.
-4. **DMP Calibration:** Use the provided example code for calibrating the MPU6050, substituting the calibration values with those specific to your setup.
-5. **Firmware Compatibility:** The code is tailored for an Odrive 3.6 with firmware from late 2019, without plans for updates to accommodate newer firmware versions due to potential lazyness issues.  Feel free to assist me with updating this code, i would love to see this bot work even better than it does now. 
+3. **DMP Calibration:** Use the provided example code for calibrating the MPU6050, substituting the calibration values with those specific to your setup.
+4. **Firmware Compatibility:** The code is tailored for an Odrive 3.6 with firmware version 0.5.6, but you will need to recalibrate your motors. 
 
-For those looking to contribute to the software or replicate the setup accurately without knowledge of PIS tuning, ensuring that your hardware configuration is identical to mine is crucial for success.
+For those looking to contribute to the software or replicate the setup accurately without knowledge of PID tuning, ensuring that your hardware configuration is identical to mine is crucial for success.
 
 
 ## Amazon Be Happy
