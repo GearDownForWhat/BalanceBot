@@ -60,3 +60,10 @@ For those looking to contribute to the software or replicate the setup accuratel
 
 ## Amazon Be Happy
 We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.
+
+## TODO
+-Switch over to CAN Communication between Teensy 3.6 and Odrive.
+-Consider adding "chin up" mode, that when the car is falling uncontrollably but still within a tollerance, use the inertial load of the wheel to try drive the car upright. 
+- Fix Odrive communication issues that arrised after updating Odrive Firmware. 
+
+
