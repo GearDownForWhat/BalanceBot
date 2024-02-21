@@ -1,3 +1,8 @@
+## WARNING!
+- This is a work in progress. Currently, I'm working on communication issues between the ODrive and Teensy. I've learned that the ODrive's EMI disrupts my serial bus, which stops all communication from the ODrive back to the Teensy. I would like to rapidly read motor current draw, velocity, battery voltages, etc. I'm going to switch over to CAN ASAP.
+- I am also planning to try increasing the CPR of the encoders to ~20,000 CPR to see if that helps with the wheel velocity error. Even a small amount of flexibility at the wheels results in position error, which quickly turns into a vibration or oscillation. The lower the velocity error of the wheels, the higher you can crank the calibration values, resulting in tighter-running PID loops.
+
+
 # BalanceBot
 
 As seen in my video : https://www.youtube.com/watch?v=k_vYA-xRXyo
